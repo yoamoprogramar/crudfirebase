@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIREBASE CRUD</title>
+</head>
+<body>
+    <form  id="task-form">
+        <label for="title">Titulo</label>
+        <input type="text" placeholder="Task Title" id="task-title">
+
+        <label for="description">Description</label>
+        <textarea  rows="3" placeholder="Task Description" id="task-description"></textarea>
+
+        <input type="submit" value="Save">
+    </form>
+    <div id="task-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
