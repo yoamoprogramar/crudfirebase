@@ -8,7 +8,8 @@
     collection,
     onSnapshot,
     doc,
-    getDoc
+    getDoc,
+    updateDoc
 } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js"
 
   
@@ -43,3 +44,5 @@ const db=getFirestore();
 
 
   export const getTask=(id)=>getDoc(doc(db,'tasks',id))
+
+  export const updateTask=(id, title, description)=> updateDoc(doc(db,'tasks',id),{title,description})
